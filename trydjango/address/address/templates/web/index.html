@@ -1,0 +1,15 @@
+<h2>Client Form</h2>
+<form action="" method="post">
+<div>
+  {% csrf_token %}
+  <table>
+  <h3>Farmer Information</h3>
+  {{ info_form.as_table }}
+  </table>
+  <table>
+  <h3>Farm Location</h3>
+  {{ locate_form.as_table }}
+  </table>
+  <input type="submit">
+  </div> 
+</form>
